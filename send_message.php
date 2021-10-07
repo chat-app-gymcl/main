@@ -1,6 +1,6 @@
 <?php
 // Ověření, jestli není jméno nebo zpráva prázdná
-if (!empty($_POST["username"]) && !empty($_POST["message"])) {
+if (!empty($_POST["message"])) {
 
     // Inicializovat sezení
     session_start();
@@ -13,11 +13,11 @@ if (!empty($_POST["username"]) && !empty($_POST["message"])) {
 
     // Vykonat dotaz s parametry
     $query->execute([
-        $_POST["username"],
+        $_SESSION["username"],
         $_POST["message"],
         time() // Aktuální čas v unixovém formátu
     ]);
 
     // Nastavit jméno do sezení pro zapamatování
-    $_SESSION["username"] = htmlspecialchars($_POST["username"]);
+    $_SESSION["username"] = htmlspecialchars($_SESSION["username"]);
 }

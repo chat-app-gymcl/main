@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(106, 240, 255);
+  }
+  h1 {
+    color: rgb(106, 106, 223);
+    font-size: larger;
+  }
+.messsage {
+    color: rgba(88, 16, 16, 0.959);
+    font-size: medium;
+    background-color:#44c767;
+	border-radius:42px;
+	border:2px solid #18ab29;
+    padding:  10px 10px;
+  }
+  
+  label {
+        color: rgb(0, 70, 70);
+        font-size: medium;
+  }
+  input {
+        color: rgb(0, 70, 70);
+        font-size: medium;
+        background-color: rgb(168, 176, 248);
+  }
+
+.send {
+	background-color:#44c767;
+	border-radius:42px;
+	border:2px solid #18ab29;
+	cursor:pointer;
+}
+button:hover {
+	background-color:#5cbf2a;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+img {
+vertical-align: middle;
+height: 16px;
+width: 16px;
+}
+
+form {
+
+position: fixed;
+}
