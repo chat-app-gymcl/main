@@ -37,7 +37,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             );
             reloadMessages(); // Ihned aktualizujeme právě odeslanou zprávu
         }
-
     </script>
 </body>
 </html>

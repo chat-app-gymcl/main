@@ -6,11 +6,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: Auth");
     exit;
 }
-
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="cs">
