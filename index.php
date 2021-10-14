@@ -19,8 +19,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </head>
   <body>
 
-
-  
     <iframe class="messages" src="messages.php" width="1000" height="700" frameborder="0"></iframe>
 
     <iframe src="form.php" width="1000" height="100" frameborder="0"></iframe>
@@ -44,8 +42,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <noscript>Cookie Consent by
     <a href="https://www.cookie-policy.net/" rel="nofollow noopener">Official Cookie Consent</a></noscript>
 
-
-
     <script>
         function send() {
             // Vytvořit AJAX požadavek metodou POST
@@ -60,8 +56,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             );
             reloadMessages(); // Ihned aktualizujeme právě odeslanou zprávu
         }
-
-
     </script>
 </body>
 </html>
