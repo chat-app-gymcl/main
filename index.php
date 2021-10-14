@@ -36,7 +36,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 	    notice_banner_reject_button_hide: true,
 	    preferences_center_close_button_hide: false,
 	    website_name: "Chat 2AV",
-	    website_privacy_policy_url: "http://4.tcp.eu.ngrok.io:12171/privacy"
+	    website_privacy_policy_url: "http://4.tcp.eu.ngrok.io:12171/privacy.html"
 	    });
     </script>
     <noscript>Cookie Consent by
