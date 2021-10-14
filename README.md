@@ -1,0 +1,2 @@
+# Chat App gymcl
+Chat App gymcl je projekt pro mojí třídu na gymnáziu. Bude představovat chatovací aplikaci, ptáte se že proč nepoužijeme třeba WhatsApp, Messenger atd. Dobrá otázka né každý má totiž sociální sítě nebo starý telefon který nerozjede tyto aplikace. Takže mně s mým spolužákem nás napadlo udělat právě tuto aplikaci v prohlížeči kde půjde psát, posílat obrázky, dokumenty a popřípadě rozvrh s úkolama na následující dny.
