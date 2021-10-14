@@ -19,7 +19,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </head>
   <body>
 
-    <iframe class="messages" src="messages.php" width="1000" height="2000" frameborder="0"></iframe>
+    <iframe class="messages" src="messages.php" width="1000" height="1500" frameborder="0"></iframe>
 
     <iframe src="form.php" width="1000" height="100" frameborder="0"></iframe>
 
