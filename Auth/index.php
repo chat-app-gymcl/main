@@ -2,22 +2,13 @@
  
   if(isset($_POST['h-captcha-response']) && !empty($_POST['h-captcha-response']))
   {
-        $secret = '037ec4e8-c672-467f-868e-1bc1c238881c';
+        $secret = '0xBBF2E6B769f3129cC732b26e2648391b64D78Eb7';
         $verifyResponse = file_get_contents('https://hcaptcha.com/siteverify?secret='.$secret.'&response='.$_POST['h-captcha-response'].'&remoteip='.$_SERVER['REMOTE_ADDR']);
         $responseData = json_decode($verifyResponse);
         if($responseData->success)
         {
             $succMsg = 'Your request have submitted successfully.';
-        }
-        else
-        {
-            $errMsg = 'Robot verification failed, please try again.';
-        }
-   }
-?>
-
-<?php
-// Initialize the session
+            // Initialize the session
 session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
@@ -104,6 +95,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Close connection
     mysqli_close($link);
 }
+        }
+        else
+        {
+            $errMsg = 'Robot verification failed, please try again.';
+        }
+   }
+?>
+
+<?php
+
 ?>
  
 <!DOCTYPE html>
