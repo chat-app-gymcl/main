@@ -1,5 +1,19 @@
 <?php
-// Initialize the session
+$data = array(
+            'secret' => "my-secret (should start with 0x..)",
+            'response' => $_POST['h-captcha-response']
+        );
+$verify = curl_init();
+curl_setopt($verify, CURLOPT_URL, "https://hcaptcha.com/siteverify");
+curl_setopt($verify, CURLOPT_POST, true);
+curl_setopt($verify, CURLOPT_POSTFIELDS, http_build_query($data));
+curl_setopt($verify, CURLOPT_RETURNTRANSFER, true);
+$response = curl_exec($verify);
+// var_dump($response);
+$responseData = json_decode($response);
+if($responseData->success) {
+    // your success code goes here
+    // Initialize the session
 session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
@@ -86,6 +100,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Close connection
     mysqli_close($link);
 }
+} 
+else {
+   // return error to user; they did not pass
+}
+
+
 ?>
  
 <!DOCTYPE html>
@@ -98,6 +118,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         body{ font: 14px sans-serif; }
         .wrapper{ width: 360px; padding: 20px; }
     </style>
+    <script src='https://www.hCaptcha.com/1/api.js' async defer></script>
 </head>
 <body>
     <div class="wrapper">
@@ -126,6 +147,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             </div>
             <p>Nemáš účet? <a href="register.php">Zde jse zaregistuj</a>.</p>
         </form>
+        <div class="h-captcha" data-sitekey="037ec4e8-c672-467f-868e-1bc1c238881c"></div>
     </div>
 </body>
 </html>
