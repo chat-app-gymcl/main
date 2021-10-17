@@ -8,7 +8,17 @@
         if($responseData->success)
         {
             $succMsg = 'Your request have submitted successfully.';
-            // Initialize the session
+            echo "cs";
+        }
+        else
+        {
+            $errMsg = 'Robot verification failed, please try again.';
+        }
+   }
+?>
+
+<?php
+// Initialize the session
 session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
@@ -95,16 +105,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Close connection
     mysqli_close($link);
 }
-        }
-        else
-        {
-            $errMsg = 'Robot verification failed, please try again.';
-        }
-   }
-?>
-
-<?php
-
 ?>
  
 <!DOCTYPE html>
