@@ -13,7 +13,12 @@ $response = curl_exec($verify);
 $responseData = json_decode($response);
 if($responseData->success) {
     // your success code goes here
-    // Initialize the session
+} 
+else {
+   // return error to user; they did not pass
+}
+
+// Initialize the session
 session_start();
  
 // Check if the user is already logged in, if yes then redirect him to welcome page
@@ -100,12 +105,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Close connection
     mysqli_close($link);
 }
-} 
-else {
-   // return error to user; they did not pass
-}
-
-
 ?>
  
 <!DOCTYPE html>
