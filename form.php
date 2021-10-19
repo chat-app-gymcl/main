@@ -18,7 +18,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </head>
   <body>
 
-    <form scroll>
+    <form action="send_message.php" method="POST" scroll>
         <input type="text" name="message" id="message">
         <button type="button" onclick="send()"><img src="/img/send-button.png"></button>
     </form>
