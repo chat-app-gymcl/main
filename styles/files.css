@@ -29,11 +29,3 @@ input {
     border-radius: 42px;
     border: 2px solid dodgerblue;
 }
-input[type=file]{
-    background-color:#44c767;
-	border-radius:42px;
-	border:2px solid #18ab29;
-	cursor:pointer;
-    padding-block: 5px;
-    padding-inline: 15px;
-}
