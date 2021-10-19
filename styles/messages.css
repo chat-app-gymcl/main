@@ -7,3 +7,12 @@
 .mess_user {
     font-size: medium;
 }
+p {
+    font-size: xx-large;
+    padding: 10px;
+    margin: 10px;
+    color: darkslategray;
+    background-color: deepskyblue;
+    border-radius: 42px;
+    border: 2px solid dodgerblue;
+}
