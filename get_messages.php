@@ -14,5 +14,5 @@ $messages = $query->fetchAll();
 
 // Iterovat přes každý řádek a vypsat jej
 foreach ($messages as $message) {
-    echo "<p><div class='mess_date'>" . date("d. m. H:i:s", $message["time"]) . " </div> <div class='mess_user'>" . htmlspecialchars($message["username"]) . "</div><div class='mess'>" . htmlspecialchars($message["message"]) . "</div></p>";
+    echo "<p><div class='mess_user'>" . htmlspecialchars($message["username"]) . " </div> <div class='mess'>" . htmlspecialchars($message["message"]) . "</div><div class='mess_time'>" . date("d. m. H:i:s", $message["time"]) . "</div></p>";
 }

@@ -1,11 +1,11 @@
 .mess {
     font-size: xx-large;
 }
-.mess_date {
-    font-size: xx-small;
+.mess_time {
+    font-size: medium;
 }
 .mess_user {
-    font-size: medium;
+    font-size: xx-large;
 }
 p {
     font-size: xx-large;
