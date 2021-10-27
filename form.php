@@ -22,17 +22,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <button type="button" onclick="send()"><img src="./img/send-button.png"></button>
     </form>
 
-<!-- Trigger/Open The Modal -->
-  <button id="myBtn"><img src="./img/file-button.png"></button>
-<!-- The Modal -->
-  <div id="myModal" class="modal">
-  <!-- Modal content -->
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <iframe src="./files/"></iframe>
-    </div>
-  </div>
-
     <script src="./js/form.js"></script>
 </body>
 </html>
