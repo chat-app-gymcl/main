@@ -23,20 +23,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <button type="button" action="send_message.php" method="POST" onclick="send()"><img src="./img/send-button.png"></button>
     </form>
 
-    <script>
-        function send() {
-            // Vytvořit AJAX požadavek metodou POST
-            $.post("send_message.php", // URL pro požadavek
-                {
-                 // Objekt s hodnotami pro odeslání
-                    "message" : $("#message").val()
-                },
-                function (data) { // Callback funkce při úspěchu
-                    $("#message").val(""); // Smazat obsah pole pro zprávu
-                }
-            );
-            reloadMessages(); // Ihned aktualizujeme právě odeslanou zprávu
-        }
-    </script>
+    <script src="./js/form.js"></script>
 </body>
 </html>
