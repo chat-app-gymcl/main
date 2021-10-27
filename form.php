@@ -23,7 +23,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     </form>
 
 <!-- Trigger/Open The Modal -->
-  <button id="myBtn"><img src="./img/send-button.png"></button>
+  <button id="myBtn"><img src="./img/file-button.png"></button>
 <!-- The Modal -->
   <div id="myModal" class="modal">
   <!-- Modal content -->
