@@ -1,13 +1,13 @@
 .mess {
     font-size: xx-large;
 }
-.mess_date {
-    font-size: xx-small;
-}
-.mess_user {
+.mess_time {
     font-size: medium;
 }
-p {
+.mess_user {
+    font-size: xx-large;
+}
+/* p {
     font-size: xx-large;
     padding: 10px;
     margin: 10px;
@@ -15,4 +15,4 @@ p {
     background-color: deepskyblue;
     border-radius: 42px;
     border: 2px solid dodgerblue;
-}
+} */
