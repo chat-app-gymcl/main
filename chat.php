@@ -28,7 +28,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <!-- Modal content -->
     <div class="modal-content">
       <span class="close">&times;</span>
-      <iframe src="./files/" frameborder="0"></iframe>
+      <iframe src="./files/" width=50% height=400px frameborder="0"></iframe>
     </div>
   </div>
   <script src="./js/popup.js"></script>
