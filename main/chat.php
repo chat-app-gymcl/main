@@ -18,9 +18,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   </head>
   <body>
 
-    <iframe class="messages" src="messages.php" width=100% height=700px frameborder="0"></iframe>
+    <iframe class="messages" src="./main/messages.php" width=100% height=700px frameborder="0"></iframe>
 
-    <iframe src="form.php" width=100% height=100px frameborder="0"></iframe>
+    <iframe src="/main/form.php" width=100% height=100px frameborder="0"></iframe>
 <!-- Trigger/Open The Modal -->
   <button id="myBtn"><img src="./img/file-button.png"></button>
 <!-- The Modal -->
