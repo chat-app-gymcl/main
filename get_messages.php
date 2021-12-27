@@ -1,6 +1,6 @@
 <?php
 // Vytvořit spojení s databází ze souboru db.php
-require "./main/db.php";
+require "db.php";
 
 // Připravit SQL dotaz
 // Vybrat vše z tabulky "chat", řadit sestupně podle sloupce pro čas

@@ -6,7 +6,7 @@ if (!empty($_POST["message"])) {
     session_start();
 
     // Vytvořit spojení s databází ze souboru db.php
-    require "./main/db.php";
+    require "db.php";
 
     // Připravit SQL dotaz
     $query = $pdo->prepare("INSERT INTO `messages` (`username`, `message`, `time`) VALUES (?, ?, ?)");
