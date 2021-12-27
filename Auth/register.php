@@ -130,7 +130,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 <input type="submit" class="btn btn-primary" value="Potvrďit">
                 <input type="reset" class="btn btn-secondary ml-2" value="Smazat">
             </div>
-            <p>Už máš účet? <a href="./">Prihlaš zde</a>.</p>
+            <p>Už máš účet? <a href="./">Prihlaš se zde</a>.</p>
         </form>
     </div>    
 </body>

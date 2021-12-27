@@ -124,7 +124,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             <div class="form-group">
                 <input type="submit" class="btn btn-primary" value="Přihlásit">
             </div>
-            <p>Nemáš účet? <a href="register.php">Zde jse zaregistuj</a>.</p>
+            <p>Nemáš účet? <a href="register.php">Zde se zaregistuj</a>.</p>
         </form>
     </div>
 </body>
