@@ -54,3 +54,8 @@ button:active {
 	position:relative;
 	top:1px;
 }
+img {
+  vertical-align: middle;
+  height: 48px;
+  width: 48px;
+}
