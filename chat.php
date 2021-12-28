@@ -17,7 +17,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   </head>
   <body>
-
+    <p>Jseš přihlášen jako <?php echo $_SESSION["username"]?></p>
+    <a href="./Auth/logout.php"><button>Odhlášení</button></a>
+    <a href="./Auth/reset-password.php"><button>Zmněna hesla</button></a>
     <iframe class="messages" src="messages.php" width=100% height=700px frameborder="0"></iframe>
 
     <iframe src="form.php" width=100% height=100px frameborder="0"></iframe>
