@@ -12,7 +12,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     // Validate username
     if(empty(trim($_POST["username"]))){
         $username_err = "Prosím zadej jméno.";
-    } elseif(!preg_match('/^[a-zA-Z0-9_]+$/', trim($_POST["username"]))){
+    } elseif(!preg_match('/^[a-zA-Z0-9_<>-]+$/', trim($_POST["username"]))){
         $username_err = "Jméno může obsahovat písmena, čísla a podtržítko";
     } else{
         // Prepare a select statement
