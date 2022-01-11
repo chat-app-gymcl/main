@@ -15,11 +15,11 @@
 
         if (in_array($fileActualExt, $allowed)) {
             if ($fileError === 0) {
-                if ($fileSize < 1000000) {
+                if ($fileSize < 1000000000) {
                     $fileNameNew = uniqid('', true).".".$fileActualExt;
                     $fileDestination = 'uploads/'.$fileNameNew;
                     move_uploaded_file($fileTmpName, $fileDestination);
-                    header("Location: index.php?uploadsuccess");
+                    echo "Soubor byl úspěšně nahrán!";
                 } else {
                     echo "Velikost tvého souboru je moc velká!";
                 }
