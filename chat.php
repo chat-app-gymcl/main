@@ -15,6 +15,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <title>Chat 2AV</title>
     <link rel="stylesheet" href="./css/chat.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./js/ads.js"></script>
   </head>
   <body>
     <p>Jseš přihlášen jako <?php echo $_SESSION["username"]?></p>
