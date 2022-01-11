@@ -22,5 +22,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <input type="file" name="file">
         <button type="submit" name="submit"><img src="../img/send-button.png" alt="Odeslat"></button>
     </form>
+    <p>Maximální velikost je 125mb!</p>
 </body>
 </html>
