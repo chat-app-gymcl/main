@@ -24,6 +24,8 @@ input {
     font-size: xx-large;
     padding: 10px;
     margin: 10px;
+    height: 37px;
+    width: 60%;
     color: darkslategray;
     background-color: deepskyblue;
     border-radius: 42px;
