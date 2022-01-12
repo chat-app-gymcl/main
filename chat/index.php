@@ -15,6 +15,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <title>Chat 2AV</title>
     <link rel="stylesheet" href="./css/index.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5706270752195906"
+     crossorigin="anonymous"></script>
   </head>
   <body>
     <a href="../">2AV</a>
