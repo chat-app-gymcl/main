@@ -105,7 +105,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         body{ font: 14px sans-serif; }
         .wrapper{ width: 360px; padding: 20px; }
     </style>
-    <script src="./js/ads.js"></script>
+    <script src=".../js/ads.js"></script>
 </head>
 <body>
     <div class="wrapper">
