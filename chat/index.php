@@ -18,6 +18,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <script src="./js/ads.js"></script>
   </head>
   <body>
+    <a href="../">2AV</a>
     <p>Jseš přihlášen jako <?php echo $_SESSION["username"]?></p>
     <a href="./Auth/logout.php"><button>Odhlášení</button></a>
     <a href="./Auth/reset-password.php"><button>Zmněna hesla</button></a>
