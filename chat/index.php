@@ -13,7 +13,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <head>
     <meta charset="UTF-8">
     <title>Chat 2AV</title>
-    <link rel="stylesheet" href="./css/chat.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./js/ads.js"></script>
   </head>
