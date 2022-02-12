@@ -1,0 +1,17 @@
+.clanekhlavni{
+    left: 10%;
+    right: 10%;
+    top: 10%;
+    bottom: 0px;
+    background: #ce2aff;
+    font-size: 100%;
+}
+body {
+				background: green;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
