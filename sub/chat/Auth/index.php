@@ -99,8 +99,15 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         .wrapper{ width: 360px; padding: 20px; }
     </style>
 <script data-ad-client="ca-pub-4038561735895877" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<link rel="stylesheet" href="https://gymcl.tk/main.css">
 </head>
 <body>
+
+    <div id="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="https://gymcl.tk/main.js"></script>
+
     <div class="wrapper">
         <h2>Přihlášení</h2>
         <p>Prosím vyplň tvé údaje pro přihlášení.</p>

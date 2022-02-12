@@ -45,6 +45,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <noscript>Cookie Consent by<a href="https://www.cookie-policy.net/" rel="nofollow noopener">Official Cookie Consent</a></noscript>
 
     <script src="./js/notifi.js"></script>
+
+    <div id="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <script src="https://gymcl.tk/main.js"></script>
+
 <script type="text/javascript"  charset="utf-8">
 // Place this code snippet near the footer of your page before the close of the /body tag
 // LEGAL NOTICE: The content of this website and all associated program code are protected under the Digital Millennium Copyright Act. Intentionally circumventing this code may constitute a violation of the DMCA.
