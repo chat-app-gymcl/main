@@ -17,3 +17,5 @@ jobs:
         port: 21
         protocol: ftp
         server-dir: /gymcl.tk/
+        exclude: |
+          README.md
