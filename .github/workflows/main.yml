@@ -18,4 +18,5 @@ jobs:
         protocol: ftp
         server-dir: /gymcl.tk/
         exclude: |
+          **/.git/**
           README.md
