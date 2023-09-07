@@ -15,3 +15,5 @@ jobs:
         username: ${{ secrets.ftp_username }}
         password: ${{ secrets.ftp_password }}
         port: 21
+        protocol: ftp
+        server-dir: /gymcl.tk
