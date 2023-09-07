@@ -19,4 +19,5 @@ jobs:
         server-dir: /gymcl.tk/
         exclude: |
           **/.git/**
+          **/.github/**
           README.md
