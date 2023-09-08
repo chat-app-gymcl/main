@@ -10,4 +10,4 @@ reloadMessages();
 
 // Vykonat funkci v určeném intervalu
 // 3000 ms = 3 sekundy
-setInterval(reloadMessages, 100);
+setInterval(reloadMessages, 3000);
