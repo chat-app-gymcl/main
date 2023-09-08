@@ -2,9 +2,9 @@
 
 // Údaje pro připojení k databázi
 $host = "localhost";
-$db = "${{ secrets.LOGIN_CHAT_NAME }}";
-$user = "${{ secrets.LOGIN_CHAT_NAME }}";
-$password = "${{ secrets.LOGIN_CHAT_PASS }}";
+$db = "chat";
+$user = "root";
+$password = "";
 
 // Vytvoření MySQL připojení přes PDO,
 // bude nastaveno kódování UTF-8 a při chybě se vyvolá výjimka
