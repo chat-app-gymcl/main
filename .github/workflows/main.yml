@@ -10,24 +10,24 @@ jobs:
 
     - name: 🧩 Insert Secrets into PHP Code
       run: |
-        echo "<?php" > sub/chat/Auth/config.php
-        echo "define('DB_SERVER', 'localhost');" >> sub/chat/Auth/config.php
-        echo "define('DB_USERNAME', '${{ secrets.LOGIN_CHAT_NAME }}');" >> sub/chat/Auth/config.php
-        echo "define('DB_PASSWORD', '${{ secrets.LOGIN_CHAT_PASS }}');" >> sub/chat/Auth/config.php
-        echo "define('DB_NAME', '${{ secrets.LOGIN_CHAT_NAME }}');" >> sub/chat/Auth/config.php
-        echo "" >> sub/chat/Auth/config.php
-        echo "\$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);" >> sub/chat/Auth/config.php
-        echo "if(\$link === false){" >> sub/chat/Auth/config.php
-        echo "    die('ERROR: Could not connect. ' . mysqli_connect_error());" >> sub/chat/Auth/config.php
-        echo "}" >> sub/chat/Auth/config.php
+        echo "<?php" > web/chat/Auth/config.php
+        echo "define('DB_SERVER', 'localhost');" >> web/chat/Auth/config.php
+        echo "define('DB_USERNAME', '${{ secrets.LOGIN_CHAT_NAME }}');" >> web/chat/Auth/config.php
+        echo "define('DB_PASSWORD', '${{ secrets.LOGIN_CHAT_PASS }}');" >> web/chat/Auth/config.php
+        echo "define('DB_NAME', '${{ secrets.LOGIN_CHAT_NAME }}');" >> web/chat/Auth/config.php
+        echo "" >> web/chat/Auth/config.php
+        echo "\$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);" >> web/chat/Auth/config.php
+        echo "if(\$link === false){" >> web/chat/Auth/config.php
+        echo "    die('ERROR: Could not connect. ' . mysqli_connect_error());" >> web/chat/Auth/config.php
+        echo "}" >> web/chat/Auth/config.php
 
-        echo "<?php" > sub/chat/db.php
-        echo "\$host = 'localhost';" >> sub/chat/db.php
-        echo "\$db = '${{ secrets.LOGIN_CHAT_NAME }}';" >> sub/chat/db.php
-        echo "\$user = '${{ secrets.LOGIN_CHAT_NAME }}';" >> sub/chat/db.php
-        echo "\$password = '${{ secrets.LOGIN_CHAT_PASS }}';" >> sub/chat/db.php
-        echo "" >> sub/chat/db.php
-        echo "\$pdo = new PDO('mysql:host=\$host;dbname=\$db;charset=utf8', \$user, \$password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);" >> sub/chat/db.php
+        echo "<?php" > web/chat/db.php
+        echo "\$host = 'localhost';" >> web/chat/db.php
+        echo "\$db = '${{ secrets.LOGIN_CHAT_NAME }}';" >> web/chat/db.php
+        echo "\$user = '${{ secrets.LOGIN_CHAT_NAME }}';" >> web/chat/db.php
+        echo "\$password = '${{ secrets.LOGIN_CHAT_PASS }}';" >> web/chat/db.php
+        echo "" >> web/chat/db.php
+        echo "\$pdo = new PDO('mysql:host=\$host;dbname=\$db;charset=utf8', \$user, \$password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);" >> web/chat/db.php
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
