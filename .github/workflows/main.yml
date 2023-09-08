@@ -10,16 +10,16 @@ jobs:
 
     - name: 🧩 Insert Secrets into PHP Code
       run: |
-        echo "<?PHP" >> /sub/chat/Auth/config.php
-        echo "define('DB_SERVER', 'localhost');" >> /sub/chat/Auth/config.php
-        echo "define('DB_USERNAME', '${{ secrets.LOGIN_CHAT_NAME }}');" >> /sub/chat/Auth/config.php
-        echo "define('DB_PASSWORD', '${{ secrets.LOGIN_CHAT_PASS }}');" >> /sub/chat/Auth/config.php
-        echo "define('DB_NAME', '${{ secrets.LOGIN_CHAT_NAME }}');" >> /sub/chat/Auth/config.php
-        echo "" >> /sub/chat/Auth/config.php
-        echo "\$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);" >> /sub/chat/Auth/config.php
-        echo "if(\$link === false){" >> /sub/chat/Auth/config.php
-        echo "    die('ERROR: Could not connect. ' . mysqli_connect_error());" >> /sub/chat/Auth/config.php
-        echo "}" >> /sub/chat/Auth/config.php
+        echo "<?php" > config.php
+        echo "define('DB_SERVER', 'localhost');" >> config.php
+        echo "define('DB_USERNAME', '${{ secrets.LOGIN_CHAT_NAME }}');" >> config.php
+        echo "define('DB_PASSWORD', '${{ secrets.LOGIN_CHAT_PASS }}');" >> config.php
+        echo "define('DB_NAME', '${{ secrets.LOGIN_CHAT_NAME }}');" >> config.php
+        echo "" >> config.php
+        echo "\$link = mysqli_connect(DB_SERVER, DB_USERNAME, DB_PASSWORD, DB_NAME);" >> config.php
+        echo "if(\$link === false){" >> config.php
+        echo "    die('ERROR: Could not connect. ' . mysqli_connect_error());" >> config.php
+        echo "}" >> config.php
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
