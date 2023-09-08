@@ -20,6 +20,14 @@ jobs:
         echo "if(\$link === false){" >> sub/chat/Auth/config.php
         echo "    die('ERROR: Could not connect. ' . mysqli_connect_error());" >> sub/chat/Auth/config.php
         echo "}" >> sub/chat/Auth/config.php
+
+        echo "<?php" > sub/chat/db.php
+        echo "$host = "localhost";" >> sub/chat/db.php
+        echo "$db = "${{ secrets.LOGIN_CHAT_NAME }}";" >> sub/chat/db.php
+        echo "$user = "${{ secrets.LOGIN_CHAT_NAME }}";" >> sub/chat/db.php
+        echo "$password = "${{ secrets.LOGIN_CHAT_PASS }}";" >> sub/chat/db.php
+        echo "" >> sub/chat/db.php
+        echo "$pdo = new PDO("mysql:host=$host;dbname=$db;charset=utf8", $user, $password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);" >> sub/chat/db.php
     
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
