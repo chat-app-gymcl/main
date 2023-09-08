@@ -10,7 +10,7 @@ jobs:
 
     - name: 🧩 Insert Secrets into PHP Code
       run: |
-        echo "<?php" > /sub/chat/Auth/config.php
+        echo "<?PHP" >> /sub/chat/Auth/config.php
         echo "define('DB_SERVER', 'localhost');" >> /sub/chat/Auth/config.php
         echo "define('DB_USERNAME', '${{ secrets.LOGIN_CHAT_NAME }}');" >> /sub/chat/Auth/config.php
         echo "define('DB_PASSWORD', '${{ secrets.LOGIN_CHAT_PASS }}');" >> /sub/chat/Auth/config.php
