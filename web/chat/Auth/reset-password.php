@@ -47,7 +47,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             mysqli_stmt_bind_param($stmt, "si", $param_password, $param_id);
             
             // Set parameters
-            $param_password = password_hash($new_password, PASSWORD_DEFAULT);
+            // $param_password = password_hash($new_password, PASSWORD_DEFAULT);
+            $param_password = $new_password;
             $param_id = $_SESSION["id"];
             
             // Attempt to execute the prepared statement
